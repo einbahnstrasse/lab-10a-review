@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoping v04</title>
+</head>
+<body>
+    <script>
+        for (var i = 0; i <= 10; i = i + 1) {
+            console.log("inside i: " + i); 
+        }
+
+        console.log("outside i: " + i); // this line runs AFTER the iteration (repetition)
+
+        for (var j = 0; j <= 10; j = j + 1) {
+            console.log("inside j: " + j); 
+        }
+    </script>
+    
+</body>
+</html>

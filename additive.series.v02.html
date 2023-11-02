@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // make an additive series that counts like this:
+        // 0 01 012 0123 01234...
+
+        for (let x = 0; x <= 7; x++) {
+            // Our 1st for loop iterates each step, 0 to 7...
+            // We define our increment here as x, so we don't confuse it with i...
+
+            let collection = []; // designates and empty array
+
+            for (let i = 0; i <= x; i++) {
+                // Our 2nd for loop (nested!) uses i as an increment
+                // Here we use x to control the number of iterations i
+                // At each increment of x, we run a new loop the size of x
+                // console.log(i);
+                collection.push(i); // .push() is a method that adds a value to an array
+            }
+
+            console.log(collection);
+
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
